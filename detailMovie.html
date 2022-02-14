@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- css link -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: poppins;
+      background-color: #06121e;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!--navigation-------------->
+  <nav>
+    <!--logo--------------->
+    <a href="index.html" class="logo">
+      <img src="images/logo.svg" />
+    </a>
+    <!--menu--btn----------------->
+    <input type="checkbox" class="menu-btn" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn">
+      <span class="nav-icon"></span>
+    </label>
+    <!--menu-------------->
+    <ul class="menu">
+      <li><a href="#">Phim lẻ</a></li>
+      <li><a href="#">Phim bộ</a></li>
+      <li><a href="#">Tất cả phim</a></li>
+      <li><a href="#">FAQ</a></li>
+    </ul>
+    <!--search------------->
+    <div class="search">
+      <input type="text" placeholder="Tìm kiếm" />
+      <!--search-icon----------->
+      <i class="fas fa-search"></i>
+    </div>
+    <a href="./login.html"><button type="button" class="btn btn-danger">Đăng nhập</button></a>
+
+  </nav>
+  <div class="backdrop">
+  </div>
+  <section class="section">
+    <div class="container shiftup">
+      <div class="tt-details">
+        <div class="column is-one-quarter-tablet">
+         <img class="img" src="https://image.tmdb.org/t/p/w342/BzVjmm8l23rPsijLiNLUzuQtyd.jpg">
+          <a class="watch button is-danger is-medium is-fullwidth" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z">
+              </path>
+            </svg> Xem phim</a>
+        </div>
+        <div class="column main">
+          <h1 class="title is-2">CODA</h1>
+          <h2 class="subtitle is-4">Giai Điệu Con Tim</h2>
+          <div class="meta"><span class="time">1 giờ 51 phút</span>
+            <span class="content-rating tag is-dark has-text-weight-bold"
+            title="Đổi tuổi 13+">PG-13</span></div>
+          <div class="level genres">
+            <div class="level-left">
+              <div class="level-item"><a
+                  href="https://www.facebook.com/sharer/sharer.php?u=https://xemphimz.org/movie/coda~15897"
+                  class="fb-share button is-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512">
+                    <path
+                      d="M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z">
+                    </path>
+                  </svg> Chia sẻ</a></div>
+              <div class="level-item">
+                <div class="dropdown is-hoverable">
+                  <div class="dropdown-trigger"><button class="collection-btn button is-success unadded"><svg
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                          d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z">
+                        </path>
+                      </svg> Bộ sưu tập</button></div>
+                </div>
+              </div>
+            </div>
+            <div class="level-right">
+            </div>
+          </div>
+          <dl class="horizontal-dl">
+            <dt>Đạo diễn</dt>
+            <dd class="csv director"><a href="">Sian Heder</a></dd>
+            <dt>Kịch bản</dt>
+            <dd class="csv write"><a href="">Sian Heder</a></dd>
+            <dt>Quốc gia</dt>
+            <dd class="csv country"><a href="">Mỹ</a></dd>
+            <dt>Khởi chiếu</dt>
+            <dd class="released">7/28/2021</dd>
+          </dl>
+          <h3 class="section-header">Mô tả nội dung:</h3>
+
+          <div class="intro has-text-grey-light">Là một CODA (Thuật ngữ chỉ con của người lớn mắc hội chứng điếc), Ruby
+            là người có khả năng nghe thấy duy nhất trong gia đình của cô. Khi công việc kinh doanh đánh bắt cá của gia
+            đình bị đe dọa, Ruby thấy mình bị giằng xé giữa việc theo đuổi tình yêu âm nhạc và nỗi sợ hãi bị cha mẹ bỏ
+            rơi.</div>
+          <h3 class="section-header">Diễn viên:</h3>
+          <div class="cast">
+            <div class="slick-slider slick-initialized" dir="ltr">
+              <div class="slick-list">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="todo.js"></script>
+  <script src="detail.js"></script>
+
+
+
+</body>
+
+</html>

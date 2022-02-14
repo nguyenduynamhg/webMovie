@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: poppins;
+            background-color: #06121e;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .search-box__search-results {
+            position: relative;
+            top: 150px;
+            margin: auto;
+        }
+
+        .row {
+            justify-content: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--navigation-------------->
+    <nav>
+        <!--logo--------------->
+        <a href="/index.html" class="logo">
+            <img src="images/logo.svg" />
+        </a>
+        <!--menu--btn----------------->
+        <input type="checkbox" class="menu-btn" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label>
+        <!--menu-------------->
+        <ul class="menu">
+            <li><a href="#">Phim lẻ</a></li>
+            <li><a href="#">Phim bộ</a></li>
+            <li><a href="#">Tất cả phim</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+        <!--search------------->
+        <div class="search">
+            <input id="search" type="text" placeholder="Tìm kiếm" />
+            <!--search-icon----------->
+            <i class="fas fa-search"></i>
+        </div>
+        <a href="./login.html"><button type="button" class="btn btn-danger">Đăng nhập</button></a>
+
+    </nav>
+    <div class="viewGender">
+        <div class="row row-cols-2 row-cols-lg-5">
+            <div class="col">
+                <div class="viewGender-block">
+                    <label class="viewGender-block__label">Thể loại:</label>
+                    <div class="viewGender-block__selector-container">
+                        <select name="genre" id="genres-selector" class="viewGender-block__selector">
+                            <option value="0" class="gender__block__option">
+                                - Tất cả -
+                            </option>
+                        </select>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="viewGender-block">
+                    <label class="viewGender-block__label">Quốc gia:</label>
+                    <div class="viewGender-block__selector-container">
+                        <select name="country" id="countries-selector" class="viewGender-block__selector">
+                            <option value="0" class="gender__block__option">
+                                - Tất cả -
+                            </option>
+                        </select>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="viewGender-block">
+                    <label class="viewGender-block__label">Năm:</label>
+                    <div class="viewGender-block__selector-container">
+                        <select name="released-year" id="released-year-selector" class="viewGender-block__selector">
+                            <option value="0" class="gender__block__option">
+                                - Tất cả -
+                            </option>
+                            <option value="2021" class="gender__block__option">
+                                2021
+                              </option>
+                              <option value="2020" class="gender__block__option">
+                                2020
+                              </option>
+                              <option value="2019" class="gender__block__option">
+                                2019
+                              </option>
+                              <option value="2018" class="gender__block__option">
+                                2018
+                              </option>
+                              <option value="2017" class="gender__block__option">
+                                2017
+                              </option>
+                              <option value="2016" class="gender__block__option">
+                                2016
+                              </option>
+                        </select>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="viewGender-block">
+                    <label class="viewGender-block__label">Sắp xếp:</label>
+                    <div class="viewGender-block__selector-container">
+                        <select name="sort" id="sort-selector" class="viewGender-block__selector">
+                            <option value="0" class="gender__block__option">
+                                Ngày cập nhật
+                            </option>
+                            <option value="1" class="gender__block__option">
+                                Ngày phát hành
+                            </option>
+                            <option value="2" class="gender__block__option">
+                                Điểm đánh giá
+                            </option>
+                        </select>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="viewGender-block">
+                    <label class="viewGender-block__label">Thời lượng:</label>
+                    <div class="viewGender-block__selector-container">
+                        <select name="country" id="countries-selector" class="viewGender-block__selector">
+                            <option value="0" class="gender__block__option">
+                                - Tất cả -
+                            </option>
+                            <option value="1" class="gender__block__option">
+                                Dưới 1 tiếng
+                            </option>
+                            <option value="2" class="gender__block__option">
+                                1 - 1.5 tiếng
+                            </option>
+                            <option value="3" class="gender__block__option">
+                                1.5 - 2 tiếng
+                            </option>
+                            <option value="4" class="gender__block__option">
+                                2.5 - 3 tiếng
+
+                            </option>
+                            <option value="5" class="gender__block__option">
+                                Trên 3 tiếng </option>
+                        </select>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search-box__search-results">
+        <div class="row row-cols-2 row-cols-lg-5">
+        </div>
+    </div>
+    
+    <div class="main-view__section--filter">
+        <div class="showcase-heading">
+            <h2>Kết quả tìm kiếm</h2>
+        </div>
+        <div class="section__posters section__posters--filter">
+            <div class="row row-cols-2 row-cols-lg-5">
+            </div>
+            <nav class="container d-flex justify-content-end">
+                <ul class="pagination pagination--filter">
+                  <li class="page-item"><span class="page-link">1</span></li>
+                  <li class="page-item active">
+                    <span class="page-link">2</span>
+                  </li>
+                  <li class="page-item"><span class="page-link">3</span></li>
+                </ul>
+              </nav>
+        </div>
+    </div>
+    <div class="main-view">
+        
+        <div class="showcase-heading">
+            <h2>Phim đề cử</h2>
+        </div>
+        <section id="movies-list">
+        </section>
+        <!--btns--------------->
+        <div class="btns">
+            <a href="#">Previous</a>
+            <a href="#">Next</a>
+        </div>
+        <div class="showcase-heading">
+            <h2>Phim lẻ mới cập nhật</h2>
+        </div>
+        <section class="movies-list">
+        </section>
+        <!--btns--------------->
+        <div class="btns">
+            <a href="#">Previous</a>
+            <a href="#">Next</a>
+        </div>
+    </div>
+
+    <!--footer------------------>
+    <footer>
+
+    </footer>
+    <script src="todo.js"></script>
+    <script src="fillter.js"></script>
+</body>
+
+</html>

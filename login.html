@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightslider.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: poppins;
+            background-color: #06121e;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .showcase-heading {
+            color: #7a7a7a;
+            font-weight: 800;
+            font-size: 36px;
+            line-height: normal;
+            padding-bottom: 20px;
+            padding-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!--navigation-------------->
+    <nav>
+        <!--logo--------------->
+        <a href="index.html" class="logo">
+            <img src="images/logo.svg" />
+        </a>
+        <!--menu--btn----------------->
+        <input type="checkbox" class="menu-btn" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label>
+        <!--menu-------------->
+        <ul class="menu">
+            <li><a href="#">Phim lẻ</a></li>
+            <li><a href="#">Phim bộ</a></li>
+            <li><a href="#">Tất cả phim</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+        <!--search------------->
+        <div class="search">
+            <input type="text" placeholder="Tìm kiếm" />
+            <!--search-icon----------->
+            <i class="fas fa-search"></i>
+        </div>
+        <a href="./login.html"><button type="button" class="btn btn-danger">Đăng nhập</button></a>
+    </nav>
+    <div class="wrapper ">
+        <!-- Icon -->
+        <h1 class="showcase-heading">Đăng Nhập
+        </h1>
+        <div id="formContent">
+            <!-- Tabs Titles -->
+
+
+
+            <!-- Login Form -->
+            <form>
+                <input type="text" id="login" class="fadeIn second" name="login" placeholder="Email">
+                <input type="text" id="password" class="fadeIn third" name="login" placeholder="Mật khẩu">
+                <input type="submit" class="fadeIn fourth" value="Đăng nhập">
+            </form>
+
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+                <a class="underlineHover" href="registration.html">Đăng kí</a> <br>
+                <a class="underlineHover" href="#">Quên mật khẩu</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
